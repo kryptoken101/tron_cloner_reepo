@@ -17,6 +17,35 @@ Clone and broadcast smart contract transactions from TRON Nile Testnet to Mainne
 
 ---
 
+## ▶️ Work Flow
+
+flowchart TD
+    A[Start CLI via argparse]
+    B{Batch or Single Mode?}
+    C[Load mainnet private key<br/>(from env or prompt)]
+    D[Fetch transaction from Nile]
+    E[Decode contract call:<br/>transfer / approve / transferFrom]
+    F[Rebuild mainnet transaction]
+    G[Save JSON debug output]
+    H{Dry Run?}
+    I[Sign transaction]
+    J[Broadcast to Mainnet]
+    K[Log result + notify webhook]
+    Z[End]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H -->|Yes| K
+    H -->|No| I --> J --> K
+    K --> Z
+
+---
+
 ## 📦 Setup
 
 ### 1. Install dependencies
@@ -72,8 +101,8 @@ docker run --rm -it \
 
 ---
 
-## License
+## 🛡️ License
 MIT
 
-## Developer Credit
-kriScripting - Kryptoken Technology Inc.
+## 🛠️ Developer Credit
+🇵🇭 kriScripting - Kryptoken Technology Inc.
