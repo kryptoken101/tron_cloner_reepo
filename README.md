@@ -73,4 +73,7 @@ docker run --rm -it \
 ---
 
 ## License
-MIT © You
+MIT
+
+## Developer Credit
+kriScripting - Kryptoken Technology Inc.
