@@ -20,18 +20,18 @@ Clone and broadcast smart contract transactions from TRON Nile Testnet to Mainne
 ## ▶️ Work Flow
 
 flowchart TD
-    A[Start CLI via argparse]
-    B{Batch or Single Mode?}
-    C[Load mainnet private key<br/>(from env or prompt)]
-    D[Fetch transaction from Nile]
-    E[Decode contract call:<br/>transfer / approve / transferFrom]
-    F[Rebuild mainnet transaction]
-    G[Save JSON debug output]
-    H{Dry Run?}
-    I[Sign transaction]
-    J[Broadcast to Mainnet]
-    K[Log result + notify webhook]
-    Z[End]
+- A [Start CLI via argparse]
+- B {Batch or Single Mode?}
+- C [Load mainnet private key<br/>(from env or prompt)]
+- D [Fetch transaction from Nile]
+- E [Decode contract call:<br/>transfer / approve / transferFrom]
+- F [Rebuild mainnet transaction]
+- G [Save JSON debug output]
+- H {Dry Run?}
+- I [Sign transaction]
+- J [Broadcast to Mainnet]
+- K [Log result + notify webhook]
+- Z [End]
 
     A --> B
     B --> C
