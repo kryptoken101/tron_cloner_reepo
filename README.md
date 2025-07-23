@@ -2,6 +2,8 @@
 
 Clone and broadcast smart contract transactions from TRON Nile Testnet to Mainnet — safely, securely, and in batches.
 
+“This standalone tool is developed in support of the Flash USDT initiative, for educational purposes only and must not be used maliciously.”
+
 ---
 
 ## 🔧 Features
